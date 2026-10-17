@@ -10,7 +10,8 @@
 <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
 <link rel="preconnect" href="https://api.github.com" crossorigin>
 <style>
-:root{--bg:#fffaf0;--ink:#2b2118;--muted:#7a6a58;--accent:#f5b400;--accent2:#e8893a;--card:#fff;--shadow:0 12px 30px rgba(80,55,20,.12);--serif:"Playfair Display",Georgia,serif;--sans:"Poppins",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+@font-face{font-family:"Childer";src:url("Childer.otf") format("opentype");font-display:swap}
+:root{--bg:#fffaf0;--ink:#2b2118;--muted:#7a6a58;--accent:#f5b400;--accent2:#e8893a;--card:#fff;--shadow:0 12px 30px rgba(80,55,20,.12);--serif:"Playfair Display",Georgia,serif;--display:"Childer","Playfair Display",Georgia,serif;--sans:"Poppins",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
 @media (prefers-color-scheme:dark){:root{--bg:#1b160f;--ink:#f7efe2;--muted:#b9a98f;--accent:#ffc83d;--accent2:#ff9f55;--card:#262016;--shadow:0 12px 30px rgba(0,0,0,.4)}}
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
@@ -38,7 +39,7 @@ nav ul a:hover{color:var(--accent2)}
 .hero-photo:hover img{transform:rotate(0) scale(1.03)}
 .ph{width:100%;aspect-ratio:3/4;border-radius:28px;background:var(--card);display:flex;align-items:center;justify-content:center;color:var(--muted);box-shadow:var(--shadow);text-align:center;padding:20px}
 .eyebrow{text-transform:uppercase;letter-spacing:5px;color:var(--accent2);font-size:.85rem;font-weight:600;animation:up .8s both}
-h1{font-family:var(--serif);font-size:clamp(4.5rem,11vw,9rem);line-height:1;margin:10px 0 16px;font-weight:900;letter-spacing:4px}
+h1{font-family:var(--display);font-size:clamp(5rem,12vw,10rem);line-height:1.05;margin:10px 0 16px;font-weight:400;letter-spacing:2px}
 h1 i{font-style:normal;display:inline-block;background:linear-gradient(90deg,var(--accent),var(--accent2));-webkit-background-clip:text;background-clip:text;color:transparent;opacity:0;transform:translateY(40px) rotate(8deg);animation:drop .7s forwards;animation-delay:calc(var(--i) * .12s + .2s)}
 @keyframes drop{to{opacity:1;transform:none}}
 .lead{font-family:var(--serif);font-style:italic;color:var(--muted);font-size:1.3rem;margin-bottom:26px;animation:up .8s .7s both}
